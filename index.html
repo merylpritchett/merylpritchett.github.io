@@ -4,20 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home Is Where the Art Is</title>
+  <style>
+
+  body{
+    width: 70%;
+    margin: 100px auto 50px auto;
+    font-family: georgia, serif;
+    font-size: 16pt;
+    line-height: 1.6em;
+    color: #444444;
+  }
+
+  a{
+    text-decoration: none;
+    color: #444444;
+  }
+
+  a:hover{
+    border-top: solid 2px #66ddbb;
+  }
+
+  .anchor-link a{
+    top: -40px;
+  }
+
+  nav ul{
+    padding: 0;
+  }
+
+  nav li{
+    font-family: helvetica, san-serif;
+    display: inline;
+    margin-right: 20px;
+  }
+
+  h1{
+    font-family: helvetica, san-serif;
+    text-align: center;
+  }
+
+  h2{
+    font-family: helvetica, san-serif;
+  }
+
+  .top{
+    position: fixed;
+    margin-left: -100px;
+    font-family: helvetica, san-serif;
+  }
+
+  .gallery img{
+    width: 30%;
+    margin: 0 3.33% 20px 0;
+    height: auto;
+    float: left;
+  }
+
+  .resources{
+    clear: both;
+  }
+
+  .resources div{ 
+    float: left;
+    width: 30%;
+    margin: 0 3.33% 20px 0;
+  }
+
+  .resources img{
+    width: 100%;
+    height: auto;
+  }
+
+  .for-rent{
+    clear: both;
+  }
+
+
+  .for-rent ul{
+    padding: 0;
+  }
+
+  .for-rent li{
+    font-size: 12pt;
+    line-height: 1.6em;
+    list-style-type: none;
+  }
+
+  .expand{
+    font-size: 12pt;
+    font-family: helvetica, san-serif;
+  }
+
+
+  }
+</style>
 </head>
 <body>
+
   <h1>Home Is Where the Art Is</h1>
+
+  <div class="top">
+    <a href="#">Top</a>
+  </div><!-- top -->
 
   <nav>
   	<ul>
-      <li>Overview</li>
-      <li>Moodboard</li>
-      <li>Home Décor Resources</li>
-      <li>For Rent</li>
-      <li>Contact</li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#moodboard">Moodboard</a></li>
+      <li><a href="#resources">Home Décor Resources</a></li>
+      <li><a href="#for-rent">For Rent</a></li>
+      <li><a href="#">Contact</a></li>
   	</ul>
   </nav>
 
+
+
+  <a class="anchor-link" name="overview">
   <div class="overview">
 
 	  <h2>Overview</h2>
@@ -27,10 +129,12 @@
 	  <p>If I'm going to do this, I want to do it right. I will collect images of ideas I want to try, gather resources full of affordable tips and tricks, and compile a list of as many apartments as I can find to sort through. Join me, dev bootcamp class, as I rise to the challenge of creating my new home! </p>
   </div> <!-- overview -->
 
+  <a class="anchor-link" name="moodboard">
   <div class="moodboard">
 
 	  <h2>Moodboard</h2>
 
+    <a name="gallery">
 	  <div class="gallery">
 	    <img src="images/5a71eab84386c7486cb6c54f8a09edbe.jpg" />
 	    <img src="images/8dd81c66b920f8b8b439784d0c26c395.jpg" />
@@ -51,79 +155,52 @@
 	  </div> <!-- gallery -->
   </div> <!-- moodboard -->
 
+  <a class="anchor-link" name="resources">
   <div class="resources">
 
+    <a name="resources">
 	  <h2>Home Décor Resources</h2>
 
-	  <h3>Resource 1</h3>
-	  <img src="http://placehold.it/200x100" />
+	  <div>
+    <h3>Resource 1</h3>
+	  <img src="http://placehold.it/300x200" />
 	  <p class="resource-description">Resource Description</p>
 	  <a href="#">Go&gt;</a>
+    </div>
 
+    <div>
 	  <h3>Resource 2</h3>
-	  <img src="http://placehold.it/200x100" />
+	  <img src="http://placehold.it/300x200" />
 	  <p class="resource-description">Resource Description</p>
 	  <a href="#">Go&gt;</a>
+    </div>
 
+    <div>
 	  <h3>Resource 3</h3>
-	  <img src="http://placehold.it/200x100" />
+	  <img src="http://placehold.it/300x200" />
 	  <p class="resource-description">Resource Description</p>
 	  <a href="#">Go&gt;</a>
+    </div>
 
-	  <h3>Resource 4</h3>
-	  <img src="http://placehold.it/200x100" />
-	  <p class="resource-description">Resource Description</p>
-	  <a href="#">Go&gt;</a>
   </div> <!-- resources -->
   
-
+  <a class="anchor-link" name="for-rent">
   <div class="for-rent">
 
 	  <h2>For Rent</h2>
 
-	  <h3>Apartment Title</h3>
-    
-    <table border="1">
-      <caption>This is the table caption</caption>
-      <thead>
-        <tr>
-          <th>Category</th>
-          <th>Apt. 1</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Price:</td>
-          <td>$1000</td>
-        </tr>
-        <tr>
-          <td>Utilities Included:</td>
-          <td>No</td>
-        </tr>
-        <tr>
-          <td>Distance from Threespot:</td>
-          <td>1500ft</td>
-        </tr>
-        <tr>
-          <td>Safety Rating:</td>
-          <td>Stabbytown</td>
-        </tr>
-        <tr>
-          <td>Units Available:</td>
-          <td>Yes</td>
-        </tr>
-        <tr>
-          <td>Website:</td>
-          <td>?</td>
-        </tr>
-        <tr>
-          <td>Phone:</td>
-          <td>?</td>
-        </tr>
-      </tbody>
-    </table>
+	  <h3>The Woodner</h3>
+    <ul>
+      <li><b>Price:</b> $1199</li>
+      <li><b>Utilities Included:</b> Yes</li>
+      <li><b>Distance from Threespot:</b> 2500ft</li>
+      <li><b>Safety Rating:</b> As Good As You Can Afford</li>
+      <li><b>Units Available:</b> Yes</li>
+      <li><b>Website:</b> <a href="www.woodner.com">woodner.com</a></li>
+      <li><b>Phone:</b> (202) 328-2800</li>
+    </ul>
 
-	  <a href="#">Expand</a>
+	  <a class="expand" href="#">Expand</a>
   </div> <!-- for-rent -->
 </body>
 </html>
