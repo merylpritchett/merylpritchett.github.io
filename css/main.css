@@ -1,0 +1,124 @@
+  <style>
+
+  * {
+  box-sizing: border-box;
+}
+  body {
+    color: #444444;
+    font-family: georgia, serif;
+    font-size: 16pt;
+    line-height: 1.6em;
+    margin: 100px auto 50px auto;
+    max-width: 800px;
+    width: 70%;
+  }
+
+  a {
+    color: #444444;
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-top: solid 2px #66ddbb;
+  }
+
+  a.anchor-link {
+    top: -20px;
+    position: relative;
+    float: left;
+  }
+
+  nav ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  nav li {
+    display: inline;
+    font-family: helvetica, san-serif;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-family: helvetica, san-serif;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: helvetica, san-serif;
+  }
+
+  .top {
+    font-family: helvetica, san-serif;
+    margin-left: -100px;
+    position: fixed;
+  }
+
+
+  .gallery {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .gallery img {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+  /* 
+  .gallery img {
+    float: left;
+    height: auto;
+    padding: 0 20px 20px 0;
+    width: 33.3%;
+  }
+
+  .gallery img:nth-child(3n+3) {
+    padding-right: 0px;
+  } 
+*/
+
+  .resources {
+    clear: both;
+  }
+
+  .resources div { 
+    float: left;
+    margin: 0 3.33% 20px 0;
+    width: 30%;
+  }
+
+  .resources img {
+    height: auto;
+    width: 100%;
+  }
+
+  .for-rent {
+    clear: both;
+  }
+
+
+  .for-rent ul {
+    padding: 0;
+  }
+
+  .for-rent li {
+    font-size: 12pt;
+    line-height: 1.6em;
+    list-style-type: none;
+  }
+
+  .for-rent div {
+    float: left;
+    padding: 0 20px 20px 0;
+    width: 33.33%;
+  }
+
+
+  }
+</style>
