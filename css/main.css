@@ -143,8 +143,12 @@
     width: 100%;
   }
 
-  .top{
+  .hide-top{
     display: none;
+  }
+
+  .top{
+    margin-left: -40px;
   }
 
 }
