@@ -142,4 +142,8 @@
     width: 100%;
   }
 
+  .top{
+    display: none;
+  }
+
 }
