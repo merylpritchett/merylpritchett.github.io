@@ -135,22 +135,52 @@
 
   </div> <!-- for-rent -->
 
-<!-- animating anchor links -->
+<!-- Smooth scroll anchor links -->
 <script type="text/javascript">
+// Run this code once the document is ready
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 300);
-        return false;
-      }
+  // Use a CSS attribute selector to find links whose href starts with #
+  // http://css-tricks.com/attribute-selectors/
+  $('a[href^=#]').click( function( event ) {
+
+    // Get the value of the href attr
+    var href = this.hash;// e.g. "#footer"
+
+    // Here's an alternate way using jQuery
+    // var href = $(this).attr('href');
+
+    // Select the target element using jQuery using the link's hash as the element's ID
+    var $target = $(href);// e.g. $('#footer')
+
+    // Before attempting to scroll, check to make sure the target element exists
+    if ( $target.length ) {
+      // Prevent the link's default action from occuring
+      // (i.e. adding the hash to the URL in the browser's address bar)
+      event.preventDefault();// "event" is a parameter from the click() function above
+
+      // Use jQuery's animate function to do the smooth scrolling
+      $('body').animate({
+        scrollTop: $target.offset().top// Scroll position of the top of the target element
+      }, 300);// Speed of animation in milliseconds
     }
   });
 });
+
+// // Here's an alternate way that doesn't rely on the attribute CSS selector
+// $(function() {
+//   // Select all links, check for hash later (this will likely be slightly more performant)
+//   $('a').click( function( event ) {
+//
+//     // Check if the link does NOT start with a hash (the "!" means "not")
+//     if ( !this.hash.length ) {
+//       // Exit this function and continue with the default link action
+//       return;
+//     }
+//
+//     // Continue with the same code as above
+//
+//   });
+// });
 </script>
 
 </body>
