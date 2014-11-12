@@ -26,6 +26,8 @@
     top: -20px;
     position: relative;
     float: left;
+     -webkit-animation: 2s; /* Chrome, Safari, Opera */
+    animation:  2s;
   }
 
   nav ul {
